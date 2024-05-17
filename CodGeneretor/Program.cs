@@ -32,6 +32,17 @@ namespace CodGeneretor
                 Console.WriteLine("\n\nFind Attribute endpoint/address \n");
                 XmlFinder.FindAtributoHttpXml(xmlDoc, "endpoint", "address");
 
+                //Teste Dicionário
+                //Dic<string, string> dic1 = new Dic<string, string>();
+
+                //dic1.Set("1","Um");
+                //dic1.Set("1","Dois");
+                //dic1.Set("3","Três");
+
+                //dic1.Get("1");
+
+                //dic1.ShowAll();
+
                 xmlDoc.Save(xmlFilePath);
             }
         }
