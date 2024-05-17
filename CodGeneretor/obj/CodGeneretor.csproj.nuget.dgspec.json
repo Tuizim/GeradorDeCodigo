@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artur.trombim\\source\\repos\\GeradorCod\\CodGeneretor\\CodGeneretor.csproj": {}
+    "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\CodGeneretor\\CodGeneretor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artur.trombim\\source\\repos\\GeradorCod\\CodGeneretor\\CodGeneretor.csproj": {
+    "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\CodGeneretor\\CodGeneretor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artur.trombim\\source\\repos\\GeradorCod\\CodGeneretor\\CodGeneretor.csproj",
+        "projectUniqueName": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\CodGeneretor\\CodGeneretor.csproj",
         "projectName": "CodGeneretor",
-        "projectPath": "C:\\Users\\artur.trombim\\source\\repos\\GeradorCod\\CodGeneretor\\CodGeneretor.csproj",
-        "packagesPath": "C:\\Users\\artur.trombim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artur.trombim\\source\\repos\\GeradorCod\\CodGeneretor\\obj\\",
+        "projectPath": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\CodGeneretor\\CodGeneretor.csproj",
+        "packagesPath": "C:\\Users\\gabriel.bonil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\CodGeneretor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\artur.trombim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabriel.bonil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
