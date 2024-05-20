@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
+using System.Linq;
 
 namespace CodGeneretor
 {
@@ -9,62 +11,32 @@ namespace CodGeneretor
         #region METODOS DE BUSCA
 
         /// <summary>
-        /// Metodo para pegar ATRIBUTO HTTP especifico no XML
-        /// ( FilePath , Decendente , Atributo  )
-        /// </summary>
-        public static void FindAtributoHttpXml(XElement xmlDoc, string decendete, string atributo)
-        {
-            foreach (XElement setting in xmlDoc.Descendants(decendete))
-            {
-                XAttribute nome = setting.Attribute(atributo);
-                if (nome != null)
-                {
-                    if (nome.Value.StartsWith("http"))
-                    {
-                        Console.WriteLine(nome.Value); // Era assim
-                        nome.Value = "Mudei";
-                        Console.WriteLine(nome.Value);
-                    }
-
-                }
-            }
-        }
-
-        /// <summary>
-        /// Metodo para pegar ELEMENTO HTTP especifico no XML
-        /// ( FilePath , Decendente , Atributo  )
-        /// </summary>
-        public static void FindElementoHttpXml(XElement xmlDoc, string decendete, string elemento)
-        {
-            foreach (XElement setting in xmlDoc.Descendants(decendete))
-            {
-                XElement nome = setting.Element(elemento);
-                if (nome != null)
-                {
-                    if (nome.Value.StartsWith("http"))
-                    {
-                        Console.WriteLine(nome.Value); // Era assim
-                        nome.Value = "Mudei";
-                        Console.WriteLine(nome.Value);
-                    }
-
-                }
-            }
-        }
-
-        /// <summary>
         /// Metodo para pegar ELEMENTO especifico no XML
         /// ( FilePath , Decendente , Atributo  )
         /// </summary>
-        public static void FindElementoXml(XElement xmlDoc, string decendete, string elemento)
+        public static void FindElementoXml(XElement xmlDoc, List<string> filtros, string mudar, string atributo, Dic<string, string> dicionario)
         {
-            foreach (XElement setting in xmlDoc.Descendants(decendete))
+            IEnumerable<XElement> tags = xmlDoc.Descendants(filtros[0]);
+            
+            //Já que inicamos com o primeiro elemento vamos pular ele, caso existir.
+            foreach (string filtro in filtros.Skip(1))
             {
-                XElement nome = setting.Element(elemento);
-                if (nome != null)
+                Console.WriteLine(filtro);
+                tags = tags.Descendants(filtro);
+            }
+
+            foreach (XElement setting in tags)
+            {
+                XAttribute key = setting.Attribute(atributo);
+                XElement value = setting.Element(mudar);
+                
+                if (value == null || key == null)
                 {
-                    Console.WriteLine(nome.Value);
+                    Console.WriteLine("Erro no value ou key");
+                    return;
                 }
+                //Console.WriteLine($"Nome: {value.Value}, key: {key.Value}");
+                dicionario.Set(key.Value, value.Value);
             }
         }
 
@@ -72,18 +44,28 @@ namespace CodGeneretor
         /// Metodo para pegar ATRIBUTO HTTP especifico no XML
         /// ( FilePath , Decendente , Atributo  )
         /// </summary>
-        public static void FindAtributoXml(XElement xmlDoc, string decendete, string atributo)
+        public static void FindAtributoXml(XElement xmlDoc, List<string> filtros, string mudar, string atributo, Dic<string, string> dicionario)
         {
-            foreach (XElement setting in xmlDoc.Descendants(decendete))
+            IEnumerable<XElement> tags = xmlDoc.Descendants(filtros[0]);
+
+            //Já que inicamos com o primeiro elemento vamos pular ele, caso existir.
+            foreach (var filtro in filtros.Skip(1))
             {
-                XAttribute nome = setting.Attribute(atributo); //Não tem como fazer alteração direta, mensagem diz ser por causa da falta de comparação de ver se é Vazio
-                if (nome != null)
+                Console.WriteLine(filtro);
+                tags = tags.Descendants(filtro);
+            }
+
+            foreach (XElement setting in tags)
+            {
+                XAttribute id = setting.Attribute(atributo);
+                XAttribute nome = setting.Attribute(mudar);
+
+                if (!(nome != null || id != null))
                 {
-                    Console.WriteLine(nome.Value + "\n\n"); //Era só isso
-                    nome.Value = "Mudei"; //Caso der errado temos o replace: https://learn.microsoft.com/en-us/dotnet/api/system.xml.linq.xelement.replaceattributes?view=net-8.0
-                    Console.WriteLine(nome.Value + "\n\n");
-                    Console.WriteLine(nome + "\n\n");
+                    Console.WriteLine("Erro no nome ou id");
                 }
+                //Console.WriteLine($"Nome: {nome.Value}, id: {id.Value}");
+                dicionario.Set(id.Value, nome.Value);
             }
         }
         #endregion

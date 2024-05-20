@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
 
@@ -8,43 +9,40 @@ namespace CodGeneretor
     {
         static void Main(string[] args)
         {
-            //string xmlFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Main.xml");
             string xmlFilePath = @"C:\Users\gabriel.bonil\Documents\WTX WebConfig\FilipeWebConfig - Copy.xml";
-            Console.WriteLine("Path: ", xmlFilePath);
+            string xmlFilePath2 = @"C:\Users\gabriel.bonil\Documents\WTX WebConfig\MyWebConfig TEST - Copy.xml";
 
-            if (!File.Exists(xmlFilePath))
+            if (!(File.Exists(xmlFilePath) || !File.Exists(xmlFilePath2)))
             {
                 Console.WriteLine($@"PATH incorreto: {xmlFilePath}");
+                Console.WriteLine($@"PATH incorreto: {xmlFilePath2}");
+                return;
             }
-            else
-            {
-                XElement xmlDoc = XElement.Load(xmlFilePath);
 
-                Console.WriteLine("\n\nFind Element HTTP Settings/value \n");
-                XmlFinder.FindElementoHttpXml(xmlDoc, "setting", "value");
+            XElement xmlDoc = XElement.Load(xmlFilePath);
+            XElement xmlDoc2 = XElement.Load(xmlFilePath2);
 
-                Console.WriteLine("\n\nFind Attribute add/value \n");
-                XmlFinder.FindAtributoHttpXml(xmlDoc, "add", "value");
+            Dic<string, string> dicElemento = new Dic<string, string>();
+            Dic<string, string> dicAtributo = new Dic<string, string>();
 
-                Console.WriteLine("\n\nFind Attribute add/connectionString \n");
-                XmlFinder.FindAtributoXml(xmlDoc, "add", "connectionString");
+            Console.WriteLine("\n\nFind Element applicationSettings settings value \n");
 
-                Console.WriteLine("\n\nFind Attribute endpoint/address \n");
-                XmlFinder.FindAtributoHttpXml(xmlDoc, "endpoint", "address");
+            XmlFinder.FindElementoXml(xmlDoc: xmlDoc, mudar: "value", atributo: "name", dicionario: dicElemento,
+                filtros: new List<string> { "applicationSettings", "setting" });
 
-                //Teste Dicionário
-                //Dic<string, string> dic1 = new Dic<string, string>();
+            Console.WriteLine("\n\nFind Attribute appSettings add/value \n");
+            XmlFinder.FindAtributoXml(xmlDoc: xmlDoc, mudar: "value", atributo: "key", dicionario: dicAtributo,
+                filtros: new List<string> { "appSettings", "add" });
 
-                //dic1.Set("1","Um");
-                //dic1.Set("1","Dois");
-                //dic1.Set("3","Três");
+            Console.WriteLine("\n\nFind Attribute connectionStrings add connectionString \n");
+            XmlFinder.FindAtributoXml(xmlDoc: xmlDoc, mudar: "connectionString", atributo: "name", dicionario: dicAtributo,
+                filtros: new List<string> { "connectionStrings", "add" });
 
-                //dic1.Get("1");
+            Console.WriteLine("\n\nFind Attribute system.serviceModel endpoint address \n");
+            XmlFinder.FindAtributoXml(xmlDoc: xmlDoc, mudar: "address", atributo: "contract", dicionario: dicAtributo,
+                filtros: new List<string> { "client", "endpoint" });
 
-                //dic1.ShowAll();
-
-                xmlDoc.Save(xmlFilePath);
-            }
+            xmlDoc.Save(xmlFilePath);
         }
     }
 }
