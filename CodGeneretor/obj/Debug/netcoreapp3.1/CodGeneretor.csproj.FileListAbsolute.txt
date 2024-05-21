@@ -12,3 +12,17 @@ C:\Users\gabriel.bonil\Documents\GeradorDeCodigo\CodGeneretor\obj\Debug\netcorea
 C:\Users\gabriel.bonil\Documents\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.dll
 C:\Users\gabriel.bonil\Documents\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.pdb
 C:\Users\gabriel.bonil\Documents\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.genruntimeconfig.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\bin\Debug\netcoreapp3.1\CodGeneretor.exe
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\bin\Debug\netcoreapp3.1\CodGeneretor.deps.json
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\bin\Debug\netcoreapp3.1\CodGeneretor.runtimeconfig.json
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\bin\Debug\netcoreapp3.1\CodGeneretor.runtimeconfig.dev.json
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\bin\Debug\netcoreapp3.1\CodGeneretor.dll
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\bin\Debug\netcoreapp3.1\CodGeneretor.pdb
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.csproj.AssemblyReference.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.AssemblyInfoInputs.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.AssemblyInfo.cs
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.csproj.CoreCompileInputs.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.dll
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.pdb
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\GeradorDeCodigo\CodGeneretor\obj\Debug\netcoreapp3.1\CodGeneretor.genruntimeconfig.cache

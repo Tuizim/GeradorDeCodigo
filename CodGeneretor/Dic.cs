@@ -1,23 +1,24 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CodGeneretor
 {
-    class Dic<TKey, TValue>
+    class Dic 
     {
-        private Dictionary<TKey, TValue> dictionary;
+        private Dictionary<string, string> dictionary;
 
         public Dic() { 
-            dictionary = new Dictionary<TKey, TValue>();
+            dictionary = new Dictionary<string, string>();
         }
 
-        public bool ContainsKey(TKey key)
+        public bool ContainsKey(string key)
         {
             return dictionary.ContainsKey(key);
         }
 
-        public void Set(TKey key, TValue value)
+        public void Set(string key, string value)
         {
             if (ContainsKey(key))
             {
@@ -27,7 +28,7 @@ namespace CodGeneretor
             dictionary.Add(key, value);
         }
 
-        public TValue Get(TKey key)
+        public string Get(string key)
         {
             if (!ContainsKey(key))
             {
@@ -39,7 +40,6 @@ namespace CodGeneretor
                 return dictionary[key];
             }
         }
-
         public void ShowAll()
         {
             foreach(var element in dictionary)

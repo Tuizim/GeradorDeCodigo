@@ -9,40 +9,49 @@ namespace CodGeneretor
     {
         static void Main(string[] args)
         {
-            string xmlFilePath = @"C:\Users\gabriel.bonil\Documents\WTX WebConfig\FilipeWebConfig - Copy.xml";
-            string xmlFilePath2 = @"C:\Users\gabriel.bonil\Documents\WTX WebConfig\MyWebConfig TEST - Copy.xml";
+            #region Paths
+            string xmlbasePath = @"C:\Users\artur.trombim\Documents\Outros\ArquivosTemporarios (testes)\XmlCODEGENERATOR";
+            string xmlFilePath = xmlbasePath + @"\Web.config" ;
+            string xmlFilePathBase = xmlbasePath + @"\Web.Piloto.SAO.config";
+            #endregion
 
-            if (!(File.Exists(xmlFilePath) || !File.Exists(xmlFilePath2)))
+            #region Tratamento
+            if (!(File.Exists(xmlFilePath) || !File.Exists(xmlFilePathBase)))
             {
                 Console.WriteLine($@"PATH incorreto: {xmlFilePath}");
-                Console.WriteLine($@"PATH incorreto: {xmlFilePath2}");
+                Console.WriteLine($@"PATH incorreto: {xmlFilePathBase}");
                 return;
             }
+            #endregion
 
-            XElement xmlDoc = XElement.Load(xmlFilePath);
-            XElement xmlDoc2 = XElement.Load(xmlFilePath2);
+            #region Declaração de variaveis
+            
+            XElement xmlDoc = XElement.Load(xmlFilePathBase);
 
-            Dic<string, string> dicElemento = new Dic<string, string>();
-            Dic<string, string> dicAtributo = new Dic<string, string>();
 
-            Console.WriteLine("\n\nFind Element applicationSettings settings value \n");
+            Dictionary<string,string> dicElemento = new Dictionary<string, string>();
+            Dictionary<string, string> dicAtributo = new Dictionary<string, string>();
 
-            XmlFinder.FindElementoXml(xmlDoc: xmlDoc, mudar: "value", atributo: "name", dicionario: dicElemento,
-                filtros: new List<string> { "applicationSettings", "setting" });
+            #endregion
 
-            Console.WriteLine("\n\nFind Attribute appSettings add/value \n");
-            XmlFinder.FindAtributoXml(xmlDoc: xmlDoc, mudar: "value", atributo: "key", dicionario: dicAtributo,
-                filtros: new List<string> { "appSettings", "add" });
+            #region Dicionario
 
-            Console.WriteLine("\n\nFind Attribute connectionStrings add connectionString \n");
-            XmlFinder.FindAtributoXml(xmlDoc: xmlDoc, mudar: "connectionString", atributo: "name", dicionario: dicAtributo,
-                filtros: new List<string> { "connectionStrings", "add" });
+            XmlFinder.AddDicByElement(xmlDoc: xmlDoc, mudar: "value", elemento: "name", dicionario: dicElemento, filtros: new List<string> { "applicationSettings", "setting" });
 
-            Console.WriteLine("\n\nFind Attribute system.serviceModel endpoint address \n");
-            XmlFinder.FindAtributoXml(xmlDoc: xmlDoc, mudar: "address", atributo: "contract", dicionario: dicAtributo,
-                filtros: new List<string> { "client", "endpoint" });
+            XmlFinder.AddDicByAtribut(xmlDoc: xmlDoc, mudar: "value", atributo: "key", dicionario: dicAtributo, filtros: new List<string> { "appSettings", "add" });
 
-            xmlDoc.Save(xmlFilePath);
+            XmlFinder.AddDicByAtribut(xmlDoc: xmlDoc, mudar: "connectionString", atributo: "name", dicionario: dicAtributo, filtros: new List<string> { "connectionStrings", "add" });
+
+            XmlFinder.AddDicByAtribut(xmlDoc: xmlDoc, mudar: "address", atributo: "contract", dicionario: dicAtributo, filtros: new List<string> { "client", "endpoint" });
+
+            // Salvarei em uma lista de dicionarios para facilitar a passagem como parametro.
+            List<Dictionary<string, string>> dicList = new List<Dictionary<string, string>> {};
+            dicList.Add(dicElemento);
+            dicList.Add(dicAtributo);
+
+            XmlFinder.ChangeXmlByElement(dicList, xmlFilePath);
+            #endregion
+
         }
     }
 }
