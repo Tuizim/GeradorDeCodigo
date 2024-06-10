@@ -74,7 +74,8 @@ namespace InterfaceWebConfig
                     Generator.OverrideWebconfigAndSave(pathOriginalWebConfig: folderSelectedPath, pathWebConfigBase: webConfigNewPath);
                     MessageBox.Show("Finalizado");
                 }
-                else{
+                else
+                {
                     MessageBox.Show("Houve um problema com o diretorio do seu arquivo, tente novamente.");
                 }
             }
@@ -95,6 +96,11 @@ namespace InterfaceWebConfig
             WebConfigFoldsSelect.Items.Clear();
             WebConfigSelect.Items.Clear();
             strtBTN.Enabled = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

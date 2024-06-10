@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\artur.trombim\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Tuizim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\InterfaceWebConfig\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+      "projectUniqueName": "C:\\Users\\Tuizim\\Documents\\GitHub\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
       "projectName": "InterfaceWebConfig",
-      "projectPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\InterfaceWebConfig\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
-      "packagesPath": "C:\\Users\\artur.trombim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\InterfaceWebConfig\\InterfaceWebConfig\\obj\\",
+      "projectPath": "C:\\Users\\Tuizim\\Documents\\GitHub\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+      "packagesPath": "C:\\Users\\Tuizim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tuizim\\Documents\\GitHub\\GeradorDeCodigo\\InterfaceWebConfig\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\artur.trombim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tuizim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -44,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -55,7 +56,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -67,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
       }
     }
   }
