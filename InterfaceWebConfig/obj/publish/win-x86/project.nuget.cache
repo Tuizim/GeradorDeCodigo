@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rQYRJzgaQmPN9RTzbP3qfXv9DWW2Q53bFXcPVU1cke9BTRHCXLPQL1UlM1xwUjrYYzKI2Jt861zfZEC4/I2hiA==",
+  "dgSpecHash": "XtscxvBZeu+N85cuWI1I0B8wIbaPdufjH1w8nGM9oSM5kgHlSlUx8PucQj+GYMQ4eItnT8yeWeoFLyXoPEhOqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\InterfaceWebConfig\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+  "projectFilePath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artur.trombim\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.18\\microsoft.netcore.app.runtime.win-x86.3.1.18.nupkg.sha512",
     "C:\\Users\\artur.trombim\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.18\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.18.nupkg.sha512",

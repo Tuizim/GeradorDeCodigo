@@ -23,26 +23,6 @@ namespace InterfaceWebConfig
             strtBTN.Enabled = false;
         }
 
-        private void SelectFileBTN_Click(object sender, EventArgs e)
-        {
-
-            using (FolderBrowserDialog fbd = new FolderBrowserDialog())
-            {
-                if (fbd.ShowDialog() == DialogResult.OK)
-                {
-                    WebConfigFoldsSelect.Items.Clear();
-                    WebConfigSelect.Items.Clear();
-                    ProjectPath.Text = fbd.SelectedPath;
-                    foundWebConfigs = Generator.List_ProjectWebConfig(fbd.SelectedPath);
-                    List<string> foldNames = Generator.GetName_Folder(foundWebConfigs);
-                    foreach (string name in foldNames)
-                    {
-                        WebConfigFoldsSelect.Items.Add(name);
-                    }
-                }
-            }
-
-        }
 
         private void SelectFilePathtxt_TextChanged(object sender, EventArgs e)
         {
@@ -101,6 +81,25 @@ namespace InterfaceWebConfig
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void SelectFileBTN_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog fbd = new FolderBrowserDialog())
+            {
+                if (fbd.ShowDialog() == DialogResult.OK)
+                {
+                    WebConfigFoldsSelect.Items.Clear();
+                    WebConfigSelect.Items.Clear();
+                    ProjectPath.Text = fbd.SelectedPath;
+                    foundWebConfigs = Generator.List_ProjectWebConfig(fbd.SelectedPath);
+                    List<string> foldNames = Generator.GetName_Folder(foundWebConfigs);
+                    foreach (string name in foldNames)
+                    {
+                        WebConfigFoldsSelect.Items.Add(name);
+                    }
+                }
+            }
         }
     }
 }

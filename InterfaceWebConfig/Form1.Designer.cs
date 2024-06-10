@@ -30,168 +30,169 @@ namespace InterfaceWebConfig
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            SelectFileBTN = new System.Windows.Forms.Button();
-            ProjectPath = new System.Windows.Forms.TextBox();
-            label3 = new System.Windows.Forms.Label();
-            WebConfigFoldsSelect = new System.Windows.Forms.ComboBox();
-            label1 = new System.Windows.Forms.Label();
-            WebConfigSelect = new System.Windows.Forms.ComboBox();
-            label2 = new System.Windows.Forms.Label();
-            folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            strtBTN = new System.Windows.Forms.Button();
-            clnBTN = new System.Windows.Forms.Button();
-            pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.SelectFileBTN = new System.Windows.Forms.Button();
+            this.ProjectPath = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.WebConfigFoldsSelect = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.WebConfigSelect = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.strtBTN = new System.Windows.Forms.Button();
+            this.clnBTN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // SelectFileBTN
             // 
-            SelectFileBTN.Location = new System.Drawing.Point(577, 106);
-            SelectFileBTN.Name = "SelectFileBTN";
-            SelectFileBTN.Size = new System.Drawing.Size(94, 23);
-            SelectFileBTN.TabIndex = 0;
-            SelectFileBTN.Text = "Select File";
-            SelectFileBTN.UseVisualStyleBackColor = true;
-            SelectFileBTN.Click += SelectFileBTN_Click;
+            this.SelectFileBTN.Location = new System.Drawing.Point(577, 106);
+            this.SelectFileBTN.Name = "SelectFileBTN";
+            this.SelectFileBTN.Size = new System.Drawing.Size(94, 23);
+            this.SelectFileBTN.TabIndex = 0;
+            this.SelectFileBTN.Text = "Select File";
+            this.SelectFileBTN.UseVisualStyleBackColor = true;
+            this.SelectFileBTN.Click += new System.EventHandler(this.SelectFileBTN_Click);
             // 
             // ProjectPath
             // 
-            ProjectPath.BackColor = System.Drawing.Color.FromArgb(167, 169, 190);
-            ProjectPath.Location = new System.Drawing.Point(80, 106);
-            ProjectPath.Name = "ProjectPath";
-            ProjectPath.Size = new System.Drawing.Size(491, 23);
-            ProjectPath.TabIndex = 1;
-            ProjectPath.TextChanged += SelectFilePathtxt_TextChanged;
+            this.ProjectPath.BackColor = System.Drawing.Color.White;
+            this.ProjectPath.Location = new System.Drawing.Point(80, 106);
+            this.ProjectPath.Name = "ProjectPath";
+            this.ProjectPath.Size = new System.Drawing.Size(491, 23);
+            this.ProjectPath.TabIndex = 1;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label3.ForeColor = System.Drawing.Color.FromArgb(167, 169, 190);
-            label3.Location = new System.Drawing.Point(80, 66);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(186, 32);
-            label3.TabIndex = 10;
-            label3.Text = "Pasta do Projeto";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(169)))), ((int)(((byte)(190)))));
+            this.label3.Location = new System.Drawing.Point(80, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(187, 32);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Pasta do Projeto";
             // 
             // WebConfigFoldsSelect
             // 
-            WebConfigFoldsSelect.BackColor = System.Drawing.Color.FromArgb(167, 169, 190);
-            WebConfigFoldsSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            WebConfigFoldsSelect.FormattingEnabled = true;
-            WebConfigFoldsSelect.Location = new System.Drawing.Point(322, 174);
-            WebConfigFoldsSelect.MaxDropDownItems = 15;
-            WebConfigFoldsSelect.Name = "WebConfigFoldsSelect";
-            WebConfigFoldsSelect.Size = new System.Drawing.Size(349, 23);
-            WebConfigFoldsSelect.TabIndex = 14;
-            WebConfigFoldsSelect.SelectedIndexChanged += WebConfigFoldsSelect_SelectedIndexChanged;
+            this.WebConfigFoldsSelect.BackColor = System.Drawing.Color.White;
+            this.WebConfigFoldsSelect.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.WebConfigFoldsSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.WebConfigFoldsSelect.FormattingEnabled = true;
+            this.WebConfigFoldsSelect.Location = new System.Drawing.Point(322, 174);
+            this.WebConfigFoldsSelect.MaxDropDownItems = 15;
+            this.WebConfigFoldsSelect.Name = "WebConfigFoldsSelect";
+            this.WebConfigFoldsSelect.Size = new System.Drawing.Size(349, 23);
+            this.WebConfigFoldsSelect.TabIndex = 14;
+            this.WebConfigFoldsSelect.SelectedIndexChanged += new System.EventHandler(this.WebConfigFoldsSelect_SelectedIndexChanged);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label1.ForeColor = System.Drawing.Color.FromArgb(167, 169, 190);
-            label1.Location = new System.Drawing.Point(80, 163);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(234, 32);
-            label1.TabIndex = 15;
-            label1.Text = "Pasta do WebConfig:\r\n";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(169)))), ((int)(((byte)(190)))));
+            this.label1.Location = new System.Drawing.Point(80, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(236, 32);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Pasta do WebConfig:\r\n";
             // 
             // WebConfigSelect
             // 
-            WebConfigSelect.BackColor = System.Drawing.Color.FromArgb(167, 169, 190);
-            WebConfigSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            WebConfigSelect.FormattingEnabled = true;
-            WebConfigSelect.Location = new System.Drawing.Point(363, 240);
-            WebConfigSelect.Name = "WebConfigSelect";
-            WebConfigSelect.Size = new System.Drawing.Size(308, 23);
-            WebConfigSelect.TabIndex = 16;
-            WebConfigSelect.SelectedIndexChanged += WebConfigSelect_SelectedIndexChanged;
+            this.WebConfigSelect.BackColor = System.Drawing.Color.White;
+            this.WebConfigSelect.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.WebConfigSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.WebConfigSelect.FormattingEnabled = true;
+            this.WebConfigSelect.Location = new System.Drawing.Point(363, 240);
+            this.WebConfigSelect.Name = "WebConfigSelect";
+            this.WebConfigSelect.Size = new System.Drawing.Size(308, 23);
+            this.WebConfigSelect.TabIndex = 16;
+            this.WebConfigSelect.SelectedIndexChanged += new System.EventHandler(this.WebConfigSelect_SelectedIndexChanged);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label2.ForeColor = System.Drawing.Color.FromArgb(167, 169, 190);
-            label2.Location = new System.Drawing.Point(80, 235);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(276, 32);
-            label2.TabIndex = 17;
-            label2.Text = "Selecione o  WebConfig:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(169)))), ((int)(((byte)(190)))));
+            this.label2.Location = new System.Drawing.Point(80, 235);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(277, 32);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Selecione o  WebConfig:";
             // 
             // strtBTN
             // 
-            strtBTN.BackColor = System.Drawing.Color.FromArgb(242, 95, 76);
-            strtBTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            strtBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(229, 49, 112);
-            strtBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(255, 192, 128);
-            strtBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            strtBTN.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            strtBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            strtBTN.Location = new System.Drawing.Point(520, 330);
-            strtBTN.Name = "strtBTN";
-            strtBTN.Size = new System.Drawing.Size(151, 50);
-            strtBTN.TabIndex = 18;
-            strtBTN.Text = "INICIAR";
-            strtBTN.UseVisualStyleBackColor = false;
-            strtBTN.Click += strtBTN_Click;
+            this.strtBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(95)))), ((int)(((byte)(76)))));
+            this.strtBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.strtBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.strtBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.strtBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.strtBTN.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.strtBTN.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.strtBTN.Location = new System.Drawing.Point(520, 330);
+            this.strtBTN.Name = "strtBTN";
+            this.strtBTN.Size = new System.Drawing.Size(151, 50);
+            this.strtBTN.TabIndex = 18;
+            this.strtBTN.Text = "INICIAR";
+            this.strtBTN.UseVisualStyleBackColor = false;
+            this.strtBTN.Click += new System.EventHandler(this.strtBTN_Click);
             // 
             // clnBTN
             // 
-            clnBTN.BackColor = System.Drawing.Color.FromArgb(167, 169, 190);
-            clnBTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            clnBTN.FlatAppearance.BorderSize = 0;
-            clnBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            clnBTN.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            clnBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            clnBTN.Location = new System.Drawing.Point(80, 330);
-            clnBTN.Name = "clnBTN";
-            clnBTN.Size = new System.Drawing.Size(151, 50);
-            clnBTN.TabIndex = 19;
-            clnBTN.Text = "Limpar";
-            clnBTN.UseVisualStyleBackColor = false;
-            clnBTN.Click += clnBTN_Click;
+            this.clnBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(169)))), ((int)(((byte)(190)))));
+            this.clnBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clnBTN.FlatAppearance.BorderSize = 0;
+            this.clnBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clnBTN.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clnBTN.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.clnBTN.Location = new System.Drawing.Point(80, 330);
+            this.clnBTN.Name = "clnBTN";
+            this.clnBTN.Size = new System.Drawing.Size(151, 50);
+            this.clnBTN.TabIndex = 19;
+            this.clnBTN.Text = "Limpar";
+            this.clnBTN.UseVisualStyleBackColor = false;
+            this.clnBTN.Click += new System.EventHandler(this.clnBTN_Click);
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new System.Drawing.Point(626, -2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(126, 72);
-            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 20;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(602, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.Color.FromArgb(15, 14, 23);
-            ClientSize = new System.Drawing.Size(730, 405);
-            Controls.Add(pictureBox1);
-            Controls.Add(clnBTN);
-            Controls.Add(strtBTN);
-            Controls.Add(label2);
-            Controls.Add(WebConfigSelect);
-            Controls.Add(label1);
-            Controls.Add(WebConfigFoldsSelect);
-            Controls.Add(label3);
-            Controls.Add(ProjectPath);
-            Controls.Add(SelectFileBTN);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            MaximizeBox = false;
-            MaximumSize = new System.Drawing.Size(746, 444);
-            MinimumSize = new System.Drawing.Size(746, 444);
-            Name = "Form1";
-            ShowIcon = false;
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "WEB Config";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.ClientSize = new System.Drawing.Size(730, 405);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.clnBTN);
+            this.Controls.Add(this.strtBTN);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.WebConfigSelect);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.WebConfigFoldsSelect);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ProjectPath);
+            this.Controls.Add(this.SelectFileBTN);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(746, 444);
+            this.MinimumSize = new System.Drawing.Size(746, 444);
+            this.Name = "Form1";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "WEB Config";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
