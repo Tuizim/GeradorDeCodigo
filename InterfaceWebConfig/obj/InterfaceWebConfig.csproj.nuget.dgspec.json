@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj": {}
+    "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj": {
+    "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+        "projectUniqueName": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
         "projectName": "InterfaceWebConfig",
-        "projectPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
-        "packagesPath": "C:\\Users\\artur.trombim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\obj\\",
+        "projectPath": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+        "packagesPath": "C:\\Users\\gabriel.bonil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\artur.trombim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabriel.bonil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

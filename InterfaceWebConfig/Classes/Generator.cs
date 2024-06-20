@@ -64,6 +64,9 @@ namespace CodGeneretor
 
             Manipulator.ServerXml(contentDoc: contentDoc, originalDoc: originalDoc, mudar: "servers", atributo: "provider",
                 filtros: new List<string> { "itravel.framework", "client" });
+
+            Manipulator.DirectChange(contentDoc: contentDoc, originalDoc: originalDoc, mudar: "ConnectionString",
+                filtros: new List<string> { "Data", "DataFactory" });
         }
 
         public static void OverrideWebconfigAndSave(string pathOriginalWebConfig, string pathWebConfigBase)
