@@ -28,7 +28,8 @@ namespace CodGeneretor
             List<string> folderNames = new List<string> { };
             foreach (var dir in paths)
             {
-                folderNames.Add(Path.GetDirectoryName(dir).Split('\\').Last());
+                string[] pathsName = Path.GetDirectoryName(dir).Split(Path.DirectorySeparatorChar);
+                folderNames.Add((pathsName[pathsName.Length-2]+"/" +pathsName.Last()));
             }
             return folderNames;
         }

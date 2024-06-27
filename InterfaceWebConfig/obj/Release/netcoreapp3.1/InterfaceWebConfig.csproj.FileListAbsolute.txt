@@ -36,3 +36,23 @@ C:\Users\artur.trombim\Documents\Desenvolvimento\C#\GeradorDeCodigo\InterfaceWeb
 C:\Users\artur.trombim\Documents\Desenvolvimento\C#\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.dll
 C:\Users\artur.trombim\Documents\Desenvolvimento\C#\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.pdb
 C:\Users\artur.trombim\Documents\Desenvolvimento\C#\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.genruntimeconfig.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\InterfaceWebConfig.exe
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\Form1.cs
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\ico.ico
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\itravelLogo.png
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\InterfaceWebConfig.deps.json
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\InterfaceWebConfig.runtimeconfig.json
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\InterfaceWebConfig.runtimeconfig.dev.json
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\InterfaceWebConfig.dll
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\bin\Release\netcoreapp3.1\InterfaceWebConfig.pdb
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.csproj.AssemblyReference.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.Form1.resources
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.Properties.Resources.resources
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.csproj.GenerateResource.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.AssemblyInfoInputs.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.AssemblyInfo.cs
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.csproj.CoreCompileInputs.cache
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.dll
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.pdb
+C:\Users\artur.trombim\Documents\Desenvolvimento\Meus Projetos\GeradorDeCodigo\InterfaceWebConfig\obj\Release\netcoreapp3.1\InterfaceWebConfig.genruntimeconfig.cache

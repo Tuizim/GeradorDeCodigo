@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\gabriel.bonil\\.nuget\\packages\\": {},
+    "C:\\Users\\artur.trombim\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+      "projectUniqueName": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\Meus Projetos\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
       "projectName": "InterfaceWebConfig",
-      "projectPath": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
-      "packagesPath": "C:\\Users\\gabriel.bonil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel.bonil\\Documents\\GeradorDeCodigo\\InterfaceWebConfig\\obj\\",
+      "projectPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\Meus Projetos\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+      "packagesPath": "C:\\Users\\artur.trombim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\Meus Projetos\\GeradorDeCodigo\\InterfaceWebConfig\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gabriel.bonil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\artur.trombim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
