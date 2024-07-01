@@ -26,10 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="ico.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="itravelLogo.png">
+    <None Update="resources\ico.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\Meus Projetos\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+      "projectUniqueName": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
       "projectName": "InterfaceWebConfig",
-      "projectPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\Meus Projetos\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
+      "projectPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\InterfaceWebConfig.csproj",
       "packagesPath": "C:\\Users\\artur.trombim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\Meus Projetos\\GeradorDeCodigo\\InterfaceWebConfig\\obj\\",
+      "outputPath": "C:\\Users\\artur.trombim\\Documents\\Desenvolvimento\\C#\\GeradorDeCodigo\\InterfaceWebConfig\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

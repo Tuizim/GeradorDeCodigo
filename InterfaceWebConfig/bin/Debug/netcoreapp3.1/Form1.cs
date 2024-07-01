@@ -14,19 +14,12 @@ namespace InterfaceWebConfig
 {
     public partial class Form1 : Form
     {
-        public static string[] foundWebConfigs;
-        public static string folderSelectedPath;
-        public static string[] folderFiles;
+        private static string[] foundWebConfigs;
+        private static string folderSelectedPath;
+        private static string[] folderFiles;
         public Form1()
         {
             InitializeComponent();
-            strtBTN.Enabled = false;
-        }
-
-
-        private void SelectFilePathtxt_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void WebConfigFoldsSelect_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,11 +69,6 @@ namespace InterfaceWebConfig
             WebConfigFoldsSelect.Items.Clear();
             WebConfigSelect.Items.Clear();
             strtBTN.Enabled = false;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void SelectFileBTN_Click(object sender, EventArgs e)
